@@ -35,7 +35,7 @@ internal class MainViewModel @Inject constructor(
             appendLineToLog(CommandLineItem.InputItem("> $command"))
             try {
                 invokeCommand(parseCommandUseCase(command))
-            } catch (e: IllegalArgumentException) {
+            } catch (e: Exception) {
                 appendLineToLog(CommandLineItem.ErrorItem(e.message.toString()))
             }
         }
