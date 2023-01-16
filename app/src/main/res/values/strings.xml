@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">trustwallet</string>
+    <string name="enter_command">Enter command</string>
+</resources>
